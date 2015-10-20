@@ -1,15 +1,17 @@
-//
-//  main.cpp
-//  experiments
-//
-//  Created by Satnam Singh on 10/12/15.
-//  Copyright © 2015 Satnam Singh. All rights reserved.
-//
-
 #include <iostream>
+#include <vector>
+
+class wombat {
+public:
+    std::vector<int> numbers = {5, 9, 12, 72};
+    
+};
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    wombat w;
+    for (auto iter = w.numbers.begin(); iter != w.numbers.end(); ++iter) {
+        std::cout << *iter << "\n";
+    }
+    // Step 2.
     return 0;
 }
